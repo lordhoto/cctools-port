@@ -3808,6 +3808,7 @@ void Options::buildSearchPaths(int argc, const char* argv[])
 	if ( addStandardLibraryDirectories ) {
 		libraryPaths.push_back("/usr/lib");
 		libraryPaths.push_back("/usr/local/lib");
+		libraryPaths.push_back("/usr/lib/gcc/darwin/3.3/"); /* cctools-port: Required for old OS X SDKs */
 
 		frameworkPaths.push_back("/Library/Frameworks/");
 		frameworkPaths.push_back("/System/Library/Frameworks/");
